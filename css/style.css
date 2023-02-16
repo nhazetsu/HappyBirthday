@@ -11,14 +11,12 @@ a {
 
 .page__main {
     /* Ảnh nền của trang đầu tiên nếu bạn muốn đổi thì đổi tại đây */
-    /* Ảnh nền của trang thứ 2 nếu bạn muốn thay đổi thì nó tại đây */
-	background-image: url("../img/background.png");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin: 0;
-	padding: 0;
-	height: 100%; 
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position-y: -18rem;
 }
 
 .buttons {
