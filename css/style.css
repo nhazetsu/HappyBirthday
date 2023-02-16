@@ -1,4 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
+/* CSS for screens larger than 600px */
+/* Thiết lập độ rộng tối đa cho các thành phần */
+.max-width {
+  max-width: 100%;
+}
+
+/* Xóa đệm (padding) của thẻ body trên điện thoại */
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+}
+
+/* Thiết lập độ rộng tối đa cho các thành phần */
+@media (max-width: 767px) {
+  .max-width {
+    max-width: 100%;
+  }
+}
+
+/* Điều chỉnh kích thước của nút trên điện thoại */
+@media (max-width: 767px) {
+  .btn-bir,
+  .btn-timeline,
+  .btn-gallery {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+}
+
+/* Thiết lập vị trí cho hình ảnh cover trên điện thoại */
+@media (max-width: 767px) {
+  .cover {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+    left: calc(50% - 100px);
+  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -12,13 +51,12 @@ a {
 .page__main {
     /* Ảnh nền của trang đầu tiên nếu bạn muốn đổi thì đổi tại đây */
     background-image: url("../img/background.png");
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
     background-size: cover;
-    background-position-y: -18rem;
+    background-repeat: no-repeat;
+	margin: 0;
+    padding: 0;
+	overflow: auto;
 }
-
 .buttons {
     display: flex;
     column-gap: 3rem;
@@ -115,32 +153,4 @@ a {
   
     border-radius: 120px;
     border: 5px solid rgb(255, 17, 0);
-}
-/* Căn giữa text */
-p{
-  text-align:center;
-}
-/* Căn giữa các phần tử inline-block (như <a>, <span>, <img>,...) */
-.text-center{
-  text-align:center;
-}
-.row {
-    margin: 15px;
-  }
- 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.item {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .item {
-    width: 48%;
-  }
 }
